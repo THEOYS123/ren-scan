@@ -1,5 +1,3 @@
----
-
 🔥 RenScan Toolkit: Advanced Recon & Scanning Suite 🔥
 
 Selamat datang di RenScan Toolkit, solusi serbaguna untuk pengujian keamanan, pengumpulan informasi, dan eksplorasi target secara mendalam.
@@ -75,9 +73,9 @@ Pastikan file seperti subdomains.txt dan payloads.py sudah tersedia jika dibutuh
 1️⃣ Jalankan Menu Utama
 
 Gunakan menu interaktif untuk memilih opsi scan:
-
-python main_menu.py
-
+```
+python scan.py
+```
 2️⃣ Pilih Opsi Scan
 
 Gunakan salah satu fitur berikut:
@@ -99,7 +97,9 @@ Scan V5: Subdomain Scanner
 📖 Contoh Penggunaan
 
 🔍 Contoh 1: Advanced Recon (Scan V1)
-di sini saya menggunakan n dan payloads dengan `scaning/subdomains.txt` dan `scaning/directories.txt`
+di sini saya menggunakan n dan payloads dengan 
+`scaning/subdomains.txt` dan `scaning/directories.txt`
+
 ```
 Memanggil: python scan/scan8.py  
 Masukkan target URL: https://pudak.co.id/en/detail_products.php?id=29  
@@ -115,8 +115,10 @@ File scaning/subdomains.txt valid dan akan digunakan.
 • Enumerating subdomains...  
 • Port Scanning selesai
 ```
+
 🛡️ Contoh 2: XSS Payload Scanner (Scan V2)
 di sini saya menggunakan n dan payloads dengan `scaning/payloads.py`
+
 ```
 Memanggil: python scan/scan7.py -u https://pudak.co.id -m s -f scaning/payloads.py  
 [INFO] Memuat 85 payload dari file: scaning/payloads.py  
