@@ -78,7 +78,7 @@ def prompt_return():
         clear_screen()
 
 def call_scan_v1():
-    command = "python ren-scan/scaning/scan/scan8.py"
+    command = "python /scaning/scan/scan8.py"
     print(f"\nMemanggil: {command}")
     loading_animation()
     os.system(command)
