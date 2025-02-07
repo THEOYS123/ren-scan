@@ -105,7 +105,7 @@ def call_scan_v3():
     print("\nProses selesai.")
 
 def call_scan_v4():
-    command = "python scaning/scan/we.py"
+    command = "python scaning/scan/we2.py"
     print(f"\nMemanggil: {command}")
     loading_animation()
     os.system(command)
