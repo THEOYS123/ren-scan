@@ -31,7 +31,7 @@ Gunakan file eksternal seperti subdomains.txt, directories.txt, dan payloads.py 
 📂 Struktur Direktori
 
 Berikut struktur direktori penting dalam toolkit ini:
-
+```
 RenScan/
 ├── scan/                  # Folder untuk menyimpan script utama
 │   ├── scan8.py           # Advanced Recon
@@ -43,7 +43,7 @@ RenScan/
 ├── directories.txt        # (Opsional) Daftar direktori
 ├── payloads.py            # (Opsional) Daftar payload untuk XSS
 └── main_menu.py           # Menu Utama
-
+```
 
 ---
 
