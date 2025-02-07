@@ -62,6 +62,7 @@ python scan.py
 Pastikan Anda memiren-scan hon 3.7+ terinstal, lalu jalankan:
 ```
 pip install -r requirements.txt
+python setup.py
 ```
 
 3. Cek File Pendukung
