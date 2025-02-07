@@ -89,7 +89,7 @@ def call_scan_v2():
     url = questionary.text("Masukkan URL:").ask()
     payload_mode = questionary.select("Pilih payload mode:", choices=["y", "n", "s"]).ask()
     extra_file = questionary.text("Masukkan file (kosongkan jika tidak ada):").ask()
-    command = f"python ren-scan/scaning/scan/scan7.py -u {url} -m {payload_mode}"
+    command = f"python scaning/scan/scan7.py -u {url} -m {payload_mode}"
     if extra_file and extra_file.strip():
         command += f" -f {extra_file.strip()}"
     print(f"\nMemanggil: {command}")
@@ -98,21 +98,21 @@ def call_scan_v2():
     print("\nProses selesai.")
 
 def call_scan_v3():
-    command = "python ren-scan/scaning/scan/cek_header2.py"
+    command = "python scaning/scan/cek_header2.py"
     print(f"\nMemanggil: {command}")
     loading_animation()
     os.system(command)
     print("\nProses selesai.")
 
 def call_scan_v4():
-    command = "python ren-scan/scaning/scan/we.py"
+    command = "python scaning/scan/we.py"
     print(f"\nMemanggil: {command}")
     loading_animation()
     os.system(command)
     print("\nProses selesai.")
 
 def call_scan_v5():
-    command = "python ren-scan/scaning/scan/www.py"
+    command = "python scaning/scan/www.py"
     print(f"\nMemanggil: {command}")
     loading_animation()
     os.system(command)
