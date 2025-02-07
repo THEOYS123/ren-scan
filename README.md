@@ -53,9 +53,10 @@ RenScan/
 ```
 git clone https://github.com/THEOYS123/ren-scan.git
 cd ren-scan
+python scan.py
 ```
 2. Install Dependencies
-Pastikan Anda memiliki Python 3.7+ terinstal, lalu jalankan:
+Pastikan Anda memiren-scan hon 3.7+ terinstal, lalu jalankan:
 ```
 pip install -r requirements.txt
 ```
