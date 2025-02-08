@@ -87,16 +87,33 @@ def call_scan_v1():
 def call_scan_v2():
     # Minta input parameter untuk scan7.py
     url = questionary.text("Masukkan URL:").ask()
+    if not url or not url.strip():
+        print("Error: URL tidak boleh kosong!")
+        return
+
     payload_mode = questionary.select("Pilih payload mode:", choices=["y", "n", "s"]).ask()
+    if not payload_mode:
+        print("Error: Pilihan payload mode tidak valid!")
+        return
+
     extra_file = questionary.text("Masukkan file (kosongkan jika tidak ada):").ask()
-    command = f"python scaning/scan/scan7.py -u {url} -m {payload_mode}"
+    command = f"python scaning/scan/scan7.py -u \"{url.strip()}\" -m {payload_mode.strip()}"
     if extra_file and extra_file.strip():
-        command += f" -f {extra_file.strip()}"
+        if not os.path.exists(extra_file.strip()):
+            print(f"Error: File '{extra_file.strip()}' tidak ditemukan!")
+            return
+        command += f" -f \"{extra_file.strip()}\""
+
     print(f"\nMemanggil: {command}")
     loading_animation()
-    os.system(command)
-    print("\nProses selesai.")
-
+    
+    # Eksekusi command
+    result = os.system(command)
+    if result != 0:
+        print("\nError: Command gagal dieksekusi!")
+    else:
+        print("\nProses selesai.")
+        
 def call_scan_v3():
     command = "python scaning/scan/cek_header2.py"
     print(f"\nMemanggil: {command}")
