@@ -19,16 +19,17 @@ def clear_screen():
 def print_banner():
     """Mencetak banner ASCII yang keren."""
     banner = r"""
-  ____  _   _ ___  ____  ____      __  __           _      
- / ___|| | | |_ _|/ ___||  _ \    |  \/  | ___   __| | ___ 
- \___ \| |_| || | \___ \| |_) |   | |\/| |/ _ \ / _` |/ _ \
-  ___) |  _  || |  ___) |  _ <    | |  | | (_) | (_| |  __/
- |____/|_| |_|___||____/|_| \_\   |_|  |_|\___/ \__,_|\___|
+                                     
+      _____             _____             
+     | __  |___ ___ ___|   __|___ ___ ___ 
+     |    -| -_|   |___|__   |  _| .'|   |
+     |__|__|___|_|_|   |_____|___|__,|_|_|
+                                     
                                                             
- Script By: RenXploit
- github   : https://github.com/THEOYS123
- tiktok   : @Sistem9999
- version  : 1.5.0
+     Script By: RenXploit
+     github   : https://github.com/THEOYS123
+     tiktok   : @Sistem9999
+     version  : 1.5.0
     """
     print(banner)
 
@@ -78,7 +79,7 @@ def prompt_return():
         clear_screen()
 
 def call_scan_v1():
-    command = "python scaning/scan/scan8.py"
+    command = "python scaning/scan/scan8_enc.py"
     print(f"\nMemanggil: {command}")
     loading_animation()
     os.system(command)
@@ -97,7 +98,7 @@ def call_scan_v2():
         return
 
     extra_file = questionary.text("Masukkan file (kosongkan jika tidak ada):").ask()
-    command = f"python scaning/scan/scan7.py -u \"{url.strip()}\" -m {payload_mode.strip()}"
+    command = f"python scaning/scan/scan7_enc.py -u \"{url.strip()}\" -m {payload_mode.strip()}"
     if extra_file and extra_file.strip():
         if not os.path.exists(extra_file.strip()):
             print(f"Error: File '{extra_file.strip()}' tidak ditemukan!")
@@ -115,21 +116,21 @@ def call_scan_v2():
         print("\nProses selesai.")
         
 def call_scan_v3():
-    command = "python scaning/scan/cek_header2.py"
+    command = "python scaning/scan/cek_header2_enc.py"
     print(f"\nMemanggil: {command}")
     loading_animation()
     os.system(command)
     print("\nProses selesai.")
 
 def call_scan_v4():
-    command = "python scaning/scan/we2.py"
+    command = "python scaning/scan/we2_enc.py"
     print(f"\nMemanggil: {command}")
     loading_animation()
     os.system(command)
     print("\nProses selesai.")
 
 def call_scan_v5():
-    command = "python scaning/scan/www.py"
+    command = "python scaning/scan/www_enc.py"
     print(f"\nMemanggil: {command}")
     loading_animation()
     os.system(command)
