@@ -16,20 +16,25 @@ def clear_screen():
     """Membersihkan layar terminal."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
+from colorama import Fore, Style, init
+
 def print_banner():
-    """Mencetak banner ASCII yang keren."""
-    banner = r"""
-                                     
+    """Mencetak banner ASCII yang keren dengan warna."""
+    # Inisialisasi colorama
+    init(autoreset=True)
+    
+    banner = f"""
+{Fore.RED}                                     
       _____             _____             
-     | __  |___ ___ ___|   __|___ ___ ___ 
-     |    -| -_|   |___|__   |  _| .'|   |
-     |__|__|___|_|_|   |_____|___|__,|_|_|
+     |{Fore.YELLOW} __  |___ ___ ___{Fore.RED}|   __|___ ___ ___ 
+     |{Fore.YELLOW}    -| -_|   |___{Fore.RED}|__   |  _| .'|   |
+     |{Fore.YELLOW}__|__|___|_|_|   {Fore.RED}|_____|___|__,|_|_|
                                      
                                                             
-     Script By: RenXploit
-     github   : https://github.com/THEOYS123
-     tiktok   : @Sistem9999
-     version  : 1.5.0
+     {Fore.CYAN}Script By: {Fore.MAGENTA}RenXploit
+     {Fore.CYAN}github   : {Fore.GREEN}https://github.com/THEOYS123
+     {Fore.CYAN}tiktok   : {Fore.GREEN}@Sistem9999
+     {Fore.CYAN}version  : {Fore.GREEN}1.5.0
     """
     print(banner)
 
