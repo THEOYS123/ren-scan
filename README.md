@@ -60,7 +60,7 @@ cd ren-scan
 2. Install Dependencies
 Pastikan Anda memiren-scan hon 3.7+ terinstal, lalu jalankan:
 ```
-pip install requests re whois bs4 termcolor ipwhois fake-useragent cryptography rich dns-python fpdf art colorama questionary
+pip install requests whois bs4 termcolor ipwhois fake-useragent cryptography rich dns-python fpdf art colorama questionary
 pip install -r requirements.txt
 pkg update && pkg upgrade -y
 python scan.py
